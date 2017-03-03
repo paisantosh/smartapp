@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN git clone https://github.com/paisantosh/smartserver.git
+RUN cd smartserver
+RUN go build smartserver.go
+EXPOSE 8000
+CMD ["smartserver"]
